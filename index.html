@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Shop</title>
     <!-- FAVICON LINK START -->
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- FAVICON LINK END -->
     <!-- TAILWIND AND DAISY UI LINK START -->
     <link
@@ -16,6 +16,88 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- TAILWIND AND DAISY UI LINK END -->
+    <!-- LATO GOOGLE FONT LINK START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LATO GOOGLE FONT LINK END -->
+    <!-- FONT AWESOME LINK START -->
+    <script src="https://kit.fontawesome.com/a2ccbbb96a.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME LINK END -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .lato_font{
+        font-family: 'Lato', sans-serif;
+      }
+      .container_width {
+        max-width: 1440px;
+        margin: 0px auto;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="lato_font">
+    <header>
+      <!-- NAVBAR PART START -->
+      <!-- FOR MOBILE DEVICE -->
+      <nav class="container_width mt-11 mb-6 sm:px-12  block md:hidden">
+        <div class="flex items-center justify-between ">
+          <div>
+           <a class="flex items-center gap-2" href="#"> 
+            <img class="w-12" src="./images/logo.png" alt="logo image">
+            <h3 class=" text-xl text-[#121212] font-bold ">Fruit Burst</h3></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars text-2xl text-[#121212]"></i>
+          </div>
+        </div>
+        
+      </nav>
+      <!-- FOR MEDIUM TO LARGE DEVICE -->
+      <nav class="container_width md:bg-[#F85559]  lg:rounded-[600px] pt-6 lg:pt-0 mt-11 mb-6 pl-7 md:pr-12 md:my-12 hidden md:block ">
+        <div class="flex items-center justify-between flex-col lg:flex-row  ">
+          <div class="hidden md:block order-2">
+            <ul class="flex items-center text-md font-medium text-white ">
+              <li class="pl-8 py-12"><a href="#">Home</a></li>
+              <li class="pl-8 py-12"><a href="#">About Us</a></li>
+              <li class="pl-8 py-12"><a href="#">Shop</a></li>
+              <li class="pl-8 py-12"><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="order-1">
+           <a class="flex items-center gap-4" href="#"> 
+            <img class="w-12" src="./images/logo.png" alt="logo image">
+            <h3 class="md:text-[40px] font-bold md:text-white ">Fruit Burst</h3></a>
+          </div>
+          <div class="relative hidden md:block order-3 mb-6 lg:mb-0">
+            <input type="text" placeholder="Search" class=" md:w-auto md:h-14 lg:w-[400px] lg:h-14 rounded-[50px] bg-white pl-7 pr-7 placeholder:text-[#121212] outline-none" />
+            <i class="fa-solid fa-magnifying-glass absolute text-[#121212] top-[22px] right-[30px]"></i>
+          </div>
+        </div>
+
+        
+      </nav>
+      <!-- NAVBAR PART END -->
+      <!-- BANNER PART START -->
+      <div>
+
+      </div>
+      <!-- BANNER PART END -->
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
