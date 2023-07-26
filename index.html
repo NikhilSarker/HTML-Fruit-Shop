@@ -35,17 +35,9 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-      tailwind.config = {
-        theme: {
-          extend: {
-            boxShadow: {
-              banner_box: "0 8px 60px 0px rgba(0, 0, 0, 0.5)",
+            backgroundImage:{
+              'team-bg':"url('./images/banner1.png')",
+
             },
           },
         },
@@ -664,7 +656,7 @@
               <p
                 class="text-lg text-[#121212] font-medium py-4 border-t-2 border-[#1212121a] w-60 mx-auto"
               >
-                Apples
+                Apple
               </p>
               <div class="rating rating-md rating-half mt-5 mb-6">
                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -722,11 +714,11 @@
               </div>
               <div class="mb-6">
                 <!-- The button to open modal -->
-                <a href="#my_modal_8" class="text-lg text-[#F85559] font-bold">Details</a>
+                <a href="#apple" class="text-lg text-[#F85559] font-bold">Details</a>
                 <!-- Put this part before </body> tag -->
-                <div class="modal" id="my_modal_8">
+                <div class="modal" id="apple">
                   <div class="modal-box">
-                    <img class="font-bold text-lg mx-auto  mt-2 md:mt-8 lg:mt-14" src="./images/fruit6.png" alt="Apple image">
+                    <img class="font-bold text-lg mx-auto  mt-2 md:mt-8 lg:mt-14" src="./images/fruit6.png" alt="Apple fruit image">
                     <h3 class="text-4xl font-extrabold text-[#121212] py-2 md:py-5">Apple</h3>
                     <p class=" py-2 md:py-4 text-lg font-medium text-[#12121299] px-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating rating-md rating-half mt-2 mb-2 md:mt-5 md:mb-6">
@@ -804,7 +796,7 @@
               <img
                 class="mt-12 mb-12 mx-auto"
                 src="./images/fruit7.png"
-                alt="Apple image"
+                alt="Orange fruit image"
               />
               <h3 class="text-2xl text-[#121212] font-bold mb-4">
                 12.90$ - 18.85$
@@ -869,7 +861,81 @@
                 />
               </div>
               <div class="mb-6">
-                <a class="text-lg text-[#F85559] font-bold" href="#">Details</a>
+                <!-- The button to open modal -->
+                <a href="#orange" class="text-lg text-[#F85559] font-bold">Details</a>
+                <!-- Put this part before </body> tag -->
+                <div class="modal" id="orange">
+                  <div class="modal-box">
+                    <img class="font-bold text-lg mx-auto  mt-2 md:mt-8 lg:mt-14" src="./images/fruit7.png" alt="Orange fruit image">
+                    <h3 class="text-4xl font-extrabold text-[#121212] py-2 md:py-5">Orange</h3>
+                    <p class=" py-2 md:py-4 text-lg font-medium text-[#12121299] px-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md rating-half mt-2 mb-2 md:mt-5 md:mb-6">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                    </div>
+
+
+                   <div class="flex items-center justify-center gap-8 mb-3 md:mb-16">
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold text-[#F85559] border-2 border-[#F85559] ">Close</a>
+                    </div>
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold bg-[#F85559] outline-none text-white">Buy Now</a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
             <div
@@ -878,7 +944,7 @@
               <img
                 class="mt-12 mb-12 mx-auto"
                 src="./images/fruit8.png"
-                alt="Apple image"
+                alt="Dragon fruit image"
               />
               <h3 class="text-2xl text-[#121212] font-bold mb-4">
                 12.90$ - 18.85$
@@ -943,7 +1009,81 @@
                 />
               </div>
               <div class="mb-6">
-                <a class="text-lg text-[#F85559] font-bold" href="#">Details</a>
+                <!-- The button to open modal -->
+                <a href="#dragon" class="text-lg text-[#F85559] font-bold">Details</a>
+                <!-- Put this part before </body> tag -->
+                <div class="modal" id="dragon">
+                  <div class="modal-box">
+                    <img class="font-bold text-lg mx-auto  mt-2 md:mt-8 lg:mt-14" src="./images/fruit8.png" alt="Dragon fruit5 image">
+                    <h3 class="text-4xl font-extrabold text-[#121212] py-2 md:py-5"> Red Dragon</h3>
+                    <p class=" py-2 md:py-4 text-lg font-medium text-[#12121299] px-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md rating-half mt-2 mb-2 md:mt-5 md:mb-6">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                    </div>
+
+
+                   <div class="flex items-center justify-center gap-8 mb-3 md:mb-16">
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold text-[#F85559] border-2 border-[#F85559] ">Close</a>
+                    </div>
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold bg-[#F85559] outline-none text-white">Buy Now</a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
             <div
@@ -952,7 +1092,7 @@
               <img
                 class="mt-12 mb-12 mx-auto"
                 src="./images/fruit9.png"
-                alt="Apple image"
+                alt="Banana image"
               />
               <h3 class="text-2xl text-[#121212] font-bold mb-4">
                 12.90$ - 18.85$
@@ -1017,7 +1157,81 @@
                 />
               </div>
               <div class="mb-6">
-                <a class="text-lg text-[#F85559] font-bold" href="#">Details</a>
+                <!-- The button to open modal -->
+                <a href="#banana" class="text-lg text-[#F85559] font-bold">Details</a>
+                <!-- Put this part before </body> tag -->
+                <div class="modal" id="banana">
+                  <div class="modal-box">
+                    <img class="font-bold text-lg mx-auto  mt-2 md:mt-8 lg:mt-14" src="./images/fruit9.png" alt="Banana fruit image">
+                    <h3 class="text-4xl font-extrabold text-[#121212] py-2 md:py-5">Banana</h3>
+                    <p class=" py-2 md:py-4 text-lg font-medium text-[#12121299] px-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating rating-md rating-half mt-2 mb-2 md:mt-5 md:mb-6">
+                      <input type="radio" name="rating-10" class="rating-hidden" />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-10"
+                        class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
+                      />
+                    </div>
+
+
+                   <div class="flex items-center justify-center gap-8 mb-3 md:mb-16">
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold text-[#F85559] border-2 border-[#F85559] ">Close</a>
+                    </div>
+                    <div class="modal-action">
+                      <a href="#" class=" py-3 px-6 md:py-5 md:px-8 rounded-lg text-sm md:text-xl font-extrabold bg-[#F85559] outline-none text-white">Buy Now</a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -1031,8 +1245,66 @@
         </div>
       </section>
       <!-- DEAL OF THE DAY PART END -->
-      <!--  PART START -->
-      <!--  PART END -->
+      <!-- TEAM PART START -->
+      <section>
+        <div class=" relative container_width bg-team-bg mt-8 md:mt-8  lg:mt-36 w-full  bg-no-repeat bg-center bg-cover h-[1400px] md:h-[800px] lg:h-[700px]">  
+          <div class="w-full bg-[#121212B3] h-full mix-blend-overlay ">
+          </div>
+          <div class="absolute w-10/12 top-1/3 -translate-y-1/3 left-1/2 -translate-x-1/2">
+            <h2 class="text-xl lg:text-5xl font-extrabold text-white pt-6 md:pt-10 lg:pt-28 text-center " >Meet the team section</h2>
+            <p class="text-sm lg:text-lg font-medium text-white text-center lg:max-w-[680px] mx-auto mb-5 lg:mb-11 pt-2 lg:pt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="grid  w-full justify-items-center  grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div class="text-center">
+                <img class="mx-auto" src="./images/member1.png" alt=" Team member 1 image">
+                <h3 class="text-2xl text-white font-bold pt-8">Awlad Hossain</h3>
+                <p class="text-lg text-white font-bold pt-2 pb-4">Fruits Expert</p>
+                <p class="mb-6">
+                  <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center "></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center mx-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center"></i></a>
+                  
+                </p>
+              </div>
+              <div class="text-center">
+                <img class="mx-auto"  src="./images/member2.png" alt=" Team member 2 image">
+                <h3 class="text-2xl text-white font-bold pt-8">Safia Chowdhury </h3>
+                <p class="text-lg text-white font-bold pt-2 pb-4">Fruits Expert</p>
+                <p class="mb-6">
+                  <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center "></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center mx-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center"></i></a>
+                  
+                </p>
+              </div>
+              <div class="text-center">
+                <img class="mx-auto"  src="./images/member3.png" alt=" Team member 3 image">
+                <h3 class="text-2xl text-white font-bold pt-8">Rokib Hossain</h3>
+                <p class="text-lg text-white font-bold pt-2 pb-4">Fruits Expert</p>
+                <p class="mb-6">
+                  <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center "></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center mx-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center"></i></a>
+                  
+                </p>
+              </div>
+              <div class="text-center">
+                <img class="mx-auto" src="./images/member4.png" alt=" Team member 4 image">
+                <h3 class="text-2xl text-white font-bold pt-8">Chaity</h3>
+                <p class="text-lg text-white font-bold pt-2 pb-4">Fruits Expert</p>
+                <p class="mb-6">
+                  <a href="#"><i class="fa-brands fa-facebook-f text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center "></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center mx-3"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in text-white bg-[#F85559] text-xl w-8 h-8 leading-8 rounded-full text-center"></i></a>
+                  
+                </p>
+              </div>
+  
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- TEAM PART END -->
     </main>
     <footer></footer>
   </body>
